@@ -16,4 +16,4 @@ var l = getUrlVars()["l"];
 var w = getUrlVars()["w"];
 var h = getUrlVars()["h"];
 window.open(l,'name','width='+w+',height='+h);
-window.open('','_self').close();
+open(location, '_self').close();
