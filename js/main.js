@@ -12,13 +12,8 @@ function getUrlParam(parameter, defaultvalue){
         }
     return urlparameter;
 }
-function close_window() {
-  if (confirm("Close Window?")) {
-    close();
-  }
-}
 var l = getUrlVars()["l"];
 var w = getUrlVars()["w"];
 var h = getUrlVars()["h"];
 window.open(l,'name','width='+w+',height='+h);
-close_window()
+close();
