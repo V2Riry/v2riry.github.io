@@ -2,21 +2,22 @@
 <html>
 	<head>
 		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
 		<div class="main-page">
 		  <div class="form">
-		    <form class="login-form">
-		      <input type="text" placeholder="Input your URL.."/>
-		      <input type="number" placeholder="Height" style="width: 40%;float:left"/>
+		      <input id="url" type="text" placeholder="Input your URL.."/>
+		      <input id="height" type="number" placeholder="Height" style="width: 40%;float:left"/>
 		      <p style="float:left; padding: 0 8.5%">x</p>
-		      <input type="number" placeholder="Width" style="width: 40%;float:right"/>
-		      <button>Create link</button>
-		      <p class="message">Make by <a href="https://www.facebook.com/NguyenThaoRi" target="_blank">Rika Nguyen</a> with &hearts;</p>
-		    </form>
+		      <input id="width" type="number" placeholder="Width" style="width: 40%;float:right"/>
+		      <button onclick="myFunction()">Create link</button>
+		      <p class="message">Make by <a href="https://www.facebook.com/NguyenThaoRi" target="_blank">Rika Nguyen</a> with &hearts;</p><br>
+		      <textarea id="result" type="text" style="width:97.8%;resize: none;"> </textarea>
+		      <button id="copy" onclick="copyFunc()">Copy to clipboard</button>
 		  </div>
 		</div>
 	</body>
 </html>
-<script src="/js/mainpage.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/mainpage.js"></script>
