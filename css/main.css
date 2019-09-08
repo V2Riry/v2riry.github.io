@@ -55,6 +55,9 @@
 #result {
   display: none;
 }
+#copy {
+  display: none;
+}
 .container {
   position: relative;
   z-index: 1;
