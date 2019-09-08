@@ -28,10 +28,10 @@ function get_short_url(long_url, func)
 {
 	$ = jQuery;
     $.getJSON(
-        "https://api-ssl.bitly.com/v3/shorten?", 
+        "http://api.bitly.com/v3/shorten?callback=?", 
         { 
             "format": "json",
-            "access_token": "R_c6fb57ec4ac344daac703d9a64f65702",
+            "apiKey": "R_c6fb57ec4ac344daac703d9a64f65702",
             "login": "v2riry",
             "longUrl": long_url
         },
