@@ -15,4 +15,5 @@ function getUrlParam(parameter, defaultvalue){
 var l = getUrlVars()["l"];
 var w = getUrlVars()["w"];
 var h = getUrlVars()["h"];
-open(location, '_self').close();window.open(l,'name','width='+w+',height='+h);
+window.open(l,'name','width='+w+',height='+h);
+open(location, '_self').close();
